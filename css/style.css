@@ -37,6 +37,10 @@ body {
     text-indent: 49px;
 }
 
+#main-nav > ul > li + li:hover {
+    background-color: #bc8080;
+}
+
 #main-nav > ul li a {
     display: block;
     text-transform: uppercase;
