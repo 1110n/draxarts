@@ -21,41 +21,41 @@ ul{
 #footer, #wrapper{
 	min-width: 1003px;
 }
-.slide-selector{
+#slide-selector{
 	position: absolute;
 	left: 0;
 	bottom: 15px;
 	width: 100%;
 	text-align: center;
 }
-.slide-selector span{
-	height: 17px;
-	width: 17px;
+#slide-selector span{
+	height: 15px;
+	width: 15px;
 	display: inline-block;
 	cursor: pointer;
-	background-image: url(../images/slider-selector.png);
-	background-repeat: no-repeat;
+	background: #d7d7d7;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #000;
 }
-.slide-selector span + span{
+#slide-selector span + span{
 	margin-left: 11px;
 }
-.active-slide-selected{
-	background-position: -24px 0;
+#slide-selector span.active-slide-selected{
+	background: #8d0000;
 }
 .slide>ul{
 	width: 100%;
 	height: 100%;
+    position: relative;
 }
 .slide>ul li{
 	height: 100%;
-	display: none;
+	/*display: none;*/
 	position: relative;
+    float: left;
 }
 .slide img{
 	display: block;
-}
-.active-slide{
-	display: block !important;
 }
 
 /**** Text boxes inside slides *****/
