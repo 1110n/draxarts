@@ -498,12 +498,12 @@ ul{
 }
 .what-we-do-index .row-1 p{
 	text-align: center;
-	bottom: 263px !important;
+	bottom: 27% !important;
 	color: #000;
 }
 .what-we-do-index .row-2 p{
-	top: 144px !important;
-	left: 497px !important;
+	top: 14% !important;
+	left: 35% !important;
 	color: #fff;
 }
 .what-we-do-index .row-3>div{
@@ -598,12 +598,12 @@ ul{
 	position: relative;
 }
 .branding .row-1 .white-text-box{
-	bottom: 189px;
-	right: 527px;
+	bottom: 18%;
+	right: 40%;
 }
 .branding .row-2 .white-text-box{
-	top: 71px;
-	right: 491px;
+	top: 6%;
+	right: 25%;
 }
 .what-we-do-numbered-list{
 	width: 880px;
@@ -658,47 +658,47 @@ ul{
 /****** Advertising Page ********/
 
 .advertising .row-1 .white-text-box{
-	top: 250px;
-	left: 501px;
+	top: 25%;
+	left: 37%;
 }
 .advertising .row-2 .white-text-box{
-	bottom: 192px;
+	bottom: 19%;
 	left: 30%;
 }
 
 /****** Designing Page ********/
 
 .designing .row-1 .white-text-box{
-	bottom: 68px;
+	bottom: 7%;
 	left: 30%;
 }
 
 /****** Packaging Page ********/
 .packaging .row-1 .white-text-box{
-	bottom: 190px;
+	bottom: 18%;
 	left: 30%;
 }
 
 /****** Presenting Page ********/
 .presenting .row-1 .white-text-box{
-	top: 250px;
-	left: 501px;
+	top: 25%;
+	left: 45%;
 }
 
 /****** Presenting Page ********/
 .training .row-1 .white-text-box{
-	top: 250px;
-	left: 501px;
+	top: 25%;
+	left: 39%;
 }
 
 /****** Presenting Page ********/
 .web-marketing .row-1 .white-text-box{
-	bottom: 306px;
-	left: 460px;
+	bottom: 30%;
+	left: 37%;
 }
 .web-marketing .row-2 .white-text-box{
-	bottom: 146px;
-	right: 458px;
+	bottom: 14%;
+	right: 37%;
 }
 
 
@@ -726,49 +726,49 @@ ul{
 }
 .row-2 .who-we-are-text-box{
 	top: 14%;
-	left: 35%;
+	left: 16%;
 }
 .row-3 .who-we-are-text-box{
-	top: 155px;
-	left: 705px;
+	top: 16%;
+	left: 50%;
 }
 .row-4 .who-we-are-text-box{
-	top: 313px;
-	left: 820px;
+	top: 50%;
+	left: 53%;
 }
 .row-5 .who-we-are-text-box{
-	bottom: 240px;
-	left: 663px;
+	bottom: 5%;
+	left: 31%;
 }
 .row-6 .who-we-are-text-box{
-	bottom: 457px;
-	left: 489px;
+	bottom: 35%;
+	left: 8%;
 }
 .row-7 .transparent-text-box{
-	bottom: 306px;
-	left: 579px;
+	bottom: 16%;
+	left: 17%;
 }
 .row-8 .who-we-are-text-box{
-	top: 313px;
-	left: 940px;
+	top: 28%;
+	left: 52%;
 }
 .who-we-are-wrapper .row-9 .transparent-text-box{
-	top: 133px;
-	left: 594px;
+	top: 13%;
+	left: 31%;
 }
 .who-we-are-wrapper .row-10 .transparent-text-box{
-	top: 102px;
+	top: 7%;
 	left: 31%;
 }
 
 .who-we-are-wrapper .row-11 .transparent-text-box{
-	bottom: 111px;
+	bottom: 11%;
 	left: 31%;
 }
 .who-we-are-wrapper .row-12>div{
 	position: absolute;
-	top: 260px;
-	left: 565px;
+	top: 20%;
+	left: 13%;
 	width: 440px;
 }
 .who-we-are-wrapper .row-12>div>h3{
@@ -799,8 +799,8 @@ ul{
     font-family: 'Gotham';
 	font-size: 32px;
 	color: #000;
-	bottom: 168px;
-	left: 678px;
+	bottom: 6%;
+	left: 35%;
 }
 .who-we-are-wrapper .row-14>div{
 	width: 1173px;
@@ -865,8 +865,8 @@ ul{
 
 /************* Portfolio/Work done page ****************/
 .work-done .row-1 p{
-	top: 414px;
-	left: 914px;
+	top: 42%;
+	left: 66%;
 	color: #000;
 	font-size: 20px;
 	position: absolute;
@@ -1002,23 +1002,23 @@ ul{
 	display: block;
 }
 .our-strategy .row-1 .our-strategy-text-box{
-	bottom: 110px;
-	left: 478px;
+	bottom: 11%;
+	left: 35%;
 }
 .our-strategy .row-2 .our-strategy-text-box{
-	bottom: 124px;
+	bottom: 12%;
 	left: 31%;
 }
 .our-strategy .row-3 .our-strategy-text-box{
-	bottom: 163px;
+	bottom: 16%;
 	left: 31%;
 }
 .our-strategy .row-4 .our-strategy-text-box{
-	bottom: 93px;
+	bottom: 9%;
 	left: 31%;
 }
 .our-strategy .row-5 .our-strategy-text-box{
-	bottom: 329px;
+	bottom: 33%;
 	left: 31%;
 }
 .who-we-are-wrapper .breadcrumb p,
@@ -1036,7 +1036,7 @@ ul{
 	font-family: 'Gotham';
 	margin:0;
 	position: absolute;
-	bottom: 133px;
+	bottom: 13%;
 	left: 31%;
 }
 .drax-force .drax-force-text-box{
@@ -1062,22 +1062,22 @@ ul{
 	font-family: 'Gotham';
 }
 .drax-force .row-2 .drax-force-text-box{
-	bottom: 104px;
-	left: 821px;
+	bottom: 10%;
+	left: 61%;
 }
 .drax-force .row-3 .drax-force-text-box{
-	bottom: 44px;
-	left: 900px;
+	bottom: 4%;
+	left: 65%;
 }
 .drax-force .row-4 .drax-force-text-box{
-	top: 167px;
-	left: 836px;
+	top: 17%;
+	left: 61%;
 }
 .drax-force .row-5 .drax-force-text-box{
-	top: 98px;
-	left: 832px;
+	top: 10%;
+	left: 57%;
 }
 .drax-force .row-6 .drax-force-text-box{
-	top: 45px;
-	left: 842px;
+	top: 5%;
+	left: 60%;
 }
