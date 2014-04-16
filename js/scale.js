@@ -29,7 +29,7 @@ function resizeImages () {
         }
         
         // Center
-        img.css('top', /*(height - img.height()) / 2*/ 0); // The top of the image should always be visible
+        img.css('top', (height - img.height()) / 2); // The top of the image should always be visible
         img.css('left', (width - img.width()) / 2);
     });
 }
