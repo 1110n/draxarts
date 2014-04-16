@@ -50,6 +50,7 @@ body {
     height: 100%;
     font-family: "Helvetica Rounded Cond";
     font-weight: bold;
+    white-space: nowrap;
 }
 
 #main-nav > ul li:last-child {
