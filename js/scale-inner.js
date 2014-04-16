@@ -28,9 +28,14 @@ function resizeImages () {
         img.attr('height', imgHeight / lowerRatio);
         img.attr('width', imgWidth / lowerRatio);
         
+        imgWidth = img.width();
+        imgHeight = img.height();
+        
         // Center
-        img.css('top', (height - img.height()) / 2); // The top of the image should always be visible
-        img.css('left', (width - img.width()) / 2);
+        console.log('height - imgHeight', height, imgHeight);
+        console.log('width - imgWidth', width, imgWidth);
+        img.css('top', (height - imgHeight) / 2); // The top of the image should always be visible
+        img.css('left', (width - imgWidth) / 2);
     });
     
     // For every image...
