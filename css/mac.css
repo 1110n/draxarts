@@ -12,16 +12,6 @@ ul{
 	display: block;
 }
 
-.wrapper{
-    background:#999999;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
 #footer, #wrapper{
 	min-width: 1003px;
 }
