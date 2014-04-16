@@ -57,6 +57,7 @@ ul{
 
 .slide img{
 	display: block;
+    position: relative;
 }
 
 /**** Text boxes inside slides *****/
