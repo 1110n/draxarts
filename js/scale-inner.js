@@ -22,16 +22,18 @@ function resizeImages () {
         var lowerRatio = Math.min(widthRatio, heightRatio);
         
         img.removeAttr('width').removeAttr('height');
+        var imgWidth = img.width();
+        var imgHeight = img.height();
+
+        img.attr('height', imgHeight / lowerRatio);
+        img.attr('width', imgWidth / lowerRatio);
         
-        if(widthRatio === lowerRatio) {
-            img.attr('width', width);
-        } else {
-            img.attr('height', height);
-        }
+        imgWidth = img.width();
+        imgHeight = img.height();
         
         // Center
-        img.css('top', /*(height - img.height()) / 2*/ 0); // The top of the image should always be visible
-        img.css('left', (width - img.width()) / 2);
+        img.css('top', (height - imgHeight) / 2); // The top of the image should always be visible
+        img.css('left', (width - imgWidth) / 2);
     });
     
     // For every image...

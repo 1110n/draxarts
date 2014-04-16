@@ -8,14 +8,20 @@ jQuery (function () {
     var selectorContainer = $('#slide-selector');
     var selectors;
     
-    // Identify all slides
-    lis.each(function (i) {
-        $(this).data('index', i);
-        selectorContainer.append($('<span>').data('index', i));
-    });
+    function resizeUl () {
+        // Identify all slides
+        selectorContainer.find('span').remove();
+        
+        lis.each(function (i) {
+            $(this).data('index', i);
+            selectorContainer.append($('<span>').data('index', i));
+        });
+
+        selectors = selectorContainer.find('span');
+        sliderUl.width(lis.width() * lis.length);
+    }
     
-    selectors = selectorContainer.find('span');
-    sliderUl.width(lis.width() * lis.length);
+    resizeUl();
     setSlide(0);
     
     interval = setInterval(function () {
@@ -41,6 +47,7 @@ jQuery (function () {
     $(window).resize(function (e) {
         // When window was resized, the lis are going to be resized too...
         // so we need to reprogram
+        resizeUl();
         setSlide(currentIndex % lis.length);
     });
 });
