@@ -12,6 +12,7 @@ jQuery (function () {
         // Identify all slides
         lis.each(function (i) {
             $(this).data('index', i);
+            selectorContainer.find('span').remove();
             selectorContainer.append($('<span>').data('index', i));
         });
 
