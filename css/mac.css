@@ -497,6 +497,11 @@ ul{
 	left: 35% !important;
 	color: #fff;
 }
+
+.what-we-do-index .slide-3 {
+    height: auto !important;
+}
+
 .what-we-do-index .row-3>div{
 	width: 945px;
 	margin: 0 auto;
