@@ -10,9 +10,10 @@ jQuery (function () {
     
     function resizeUl () {
         // Identify all slides
+        selectorContainer.find('span').remove();
+        
         lis.each(function (i) {
             $(this).data('index', i);
-            selectorContainer.find('span').remove();
             selectorContainer.append($('<span>').data('index', i));
         });
 
