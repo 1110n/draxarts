@@ -42,13 +42,13 @@ ul{
 	background: #8d0000;
 }
 
-.slide>ul{
+.slide > ul{
 	width: 100%;
 	height: 100%;
     position: relative;
 }
 
-.slide>ul li{
+.slide > ul li{
 	height: 100%;
 	/*display: none;*/
 	position: relative;
@@ -407,7 +407,7 @@ ul{
 	text-indent: -999999px;
 	background: #780000 url(../images/search-lens.png) no-repeat center center;
 }
-.submenu>ul{
+.submenu > ul{
 	width: 100%;
 	height: 56px;
 	padding: 0;
@@ -420,17 +420,17 @@ ul{
 .submenu > div {
     padding-bottom: 11px;
 }
-.submenu>ul li{
+.submenu > ul li{
 	float: left;
 	height: 100%;
 	width: 142px;
 	background-image: url(../images/submenu-links.png);
 	background-repeat: no-repeat;
 }
-.submenu>ul li + li{
+.submenu > ul li + li{
 	border-left: solid 1px #f1ce30;
 }
-.submenu>ul li a{
+.submenu > ul li a{
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
@@ -438,7 +438,7 @@ ul{
 	text-indent: -999998px;
 }
 .active-submenu,
-.submenu>ul li:hover a{
+.submenu > ul li:hover a{
 	text-indent: 0px !important;
 	display: block !important;
 	text-align: center;
@@ -502,16 +502,18 @@ ul{
     height: auto !important;
 }
 
-.what-we-do-index .row-3>div{
+.what-we-do-index .slide-3 img {
+    position: static !important;
+}
+
+.what-we-do-index .row-3 > div{
 	width: 945px;
 	margin: 0 auto;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	position: absolute;
+	position: relative;
 	padding: 47px 28px 0 29px;
+    padding-bottom: 163px;
 }
+
 .what-we-do-index .row-3 div h2{
 	margin: 0;
 	background: #fff;
@@ -522,25 +524,25 @@ ul{
 	text-align: center;
 	padding: 21px 0 23px;
 }
-.what-we-do-index .row-3 div>div{
+.what-we-do-index .row-3 div > div{
 	width: 100%;
 	margin-top: 18px;
 }
-.what-we-do-index .row-3 div>div ul{
+.what-we-do-index .row-3 div > div ul{
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	list-style: none;
 }
-.what-we-do-index .row-3 div>div ul + ul{
+.what-we-do-index .row-3 div > div ul + ul{
 	margin-top: 41px;
 }
-.what-we-do-index .row-3 div>div ul li{
+.what-we-do-index .row-3 div > div ul li{
 	float: left;
 	height: 212px;
 	width: 287px;
 }
-.what-we-do-index .row-3 div>div ul li a{
+.what-we-do-index .row-3 div > div ul li a{
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -548,7 +550,7 @@ ul{
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-.what-we-do-index .row-3 div>div ul li + li{
+.what-we-do-index .row-3 div > div ul li + li{
 	margin-left: 42px;
 }
 #branding{
@@ -612,22 +614,22 @@ ul{
 	padding: 85px 0 0 123px;
     font-family: 'Gotham';
 }
-.what-we-do-numbered-list>p{
+.what-we-do-numbered-list > p{
 	margin: 0;
 	font-size: 28px;
 	color: #000;
 	text-shadow: 1px 1px #E09529;
 }
-.what-we-do-numbered-list>p span{
+.what-we-do-numbered-list > p span{
 	display: block;
 }
-.what-we-do-numbered-list>ul{
+.what-we-do-numbered-list > ul{
 	margin: 49px 0 0;
 	padding: 0;
 	list-style:  none;
 	width: 733px;
 }
-.what-we-do-numbered-list>ul li{
+.what-we-do-numbered-list > ul li{
 	height: 75px;
 	font-size: 24px;
 	text-indent: 80px;
@@ -635,7 +637,7 @@ ul{
 	text-transform: capitalize;
 	background: #fff url(../images/what-we-do/list-number-bckgrd.jpg) no-repeat left top;
 }
-.what-we-do-numbered-list>ul li span{
+.what-we-do-numbered-list > ul li span{
 	display: inline-block;
 	text-indent: 0;
 	float: left;
@@ -648,7 +650,7 @@ ul{
 	font-weight: bold;
 }
 
-.what-we-do-numbered-list>ul li + li{
+.what-we-do-numbered-list > ul li + li{
 	margin-top: 21px;
 }
 /****** Advertising Page ********/
@@ -761,13 +763,13 @@ ul{
 	bottom: 11%;
 	left: 31%;
 }
-.who-we-are-wrapper .row-12>div{
+.who-we-are-wrapper .row-12 > div{
 	position: absolute;
 	top: 20%;
 	left: 13%;
 	width: 440px;
 }
-.who-we-are-wrapper .row-12>div>h3{
+.who-we-are-wrapper .row-12 > div > h3{
 	margin: 0;
 	font-size: 36px;
     font-family: 'Gotham';
@@ -776,7 +778,7 @@ ul{
 	background: #780000;	
 	color: #fff;
 }
-.who-we-are-wrapper .row-12>div>p{
+.who-we-are-wrapper .row-12 > div > p{
 	margin: 0;
 	padding: 25px;
     font-family: 'Gotham';
@@ -785,11 +787,11 @@ ul{
 	color: #000;
 	background: #fff;
 }
-.who-we-are-wrapper .row-12>div>p span{
+.who-we-are-wrapper .row-12 > div > p span{
 	font-weight: 100;
 	display: block;
 }
-.who-we-are-wrapper .row-13>p{
+.who-we-are-wrapper .row-13 > p{
 	margin: 0;
 	position: absolute;
     font-family: 'Gotham';
@@ -798,7 +800,7 @@ ul{
 	bottom: 6%;
 	left: 35%;
 }
-.who-we-are-wrapper .row-14>div{
+.who-we-are-wrapper .row-14 > div{
 	width: 1173px;
 	margin: 0 auto;
 	padding-top: 27px;
@@ -808,12 +810,12 @@ ul{
 	bottom:0;
 	right:0;
 }
-.who-we-are-wrapper .row-14>div>div{
+.who-we-are-wrapper .row-14 > div > div{
 	width: 1003px;
 	margin: 0 0 0 38px;
 	float: left;
 }
-.who-we-are-wrapper .row-14>div>div h2{
+.who-we-are-wrapper .row-14 > div > div h2{
 	text-align: center;
 	font-size: 32px;
 	color: #000;
@@ -823,7 +825,7 @@ ul{
 	margin: 0;
 	background: #ebf1f8;
 }
-.who-we-are-wrapper .row-14>div>div h2 img{
+.who-we-are-wrapper .row-14 > div > div h2 img{
 	position: relative;
 	top: 5px;
 	display: inline;
@@ -842,7 +844,7 @@ ul{
 .carousel li + li{
 	margin-left: 9px;
 }
-.who-we-are-wrapper .row-14>div a{
+.who-we-are-wrapper .row-14 > div a{
 	display: block;
 	height: 90px;
 	width: 45px;
@@ -850,11 +852,11 @@ ul{
 	background-image: url(../images/caroul-arrows.png);
 	background-repeat: no-repeat;
 }
-.who-we-are-wrapper .row-14>div a.prev-arrow{
+.who-we-are-wrapper .row-14 > div a.prev-arrow{
 	background-position: 0 0;
 	float: left;
 }
-.who-we-are-wrapper .row-14>div a.next-arrow{
+.who-we-are-wrapper .row-14 > div a.next-arrow{
 	background-position: -53px 0;
 	float: right;
 }
@@ -868,7 +870,7 @@ ul{
 	position: absolute;
 	font-family: 'Gotham';
 }
-.work-done .row-2>div{
+.work-done .row-2 > div{
 	width: 1000px;
 	margin: 0 auto;
 	position: absolute;
@@ -877,33 +879,33 @@ ul{
 	right: 0;
 	top: 0;
 }
-.work-done .row-2>div>p{
+.work-done .row-2 > div > p{
 	text-indent: 48px;
 	font-family: 'Gotham';
 	color: #fff;
 	font-size: 20px;
 	margin: 27px 0;
 }
-.work-done .row-2>div>div{
+.work-done .row-2 > div > div{
 	width: 806px;
 	margin: 0 auto;
 }
-.work-done .row-2>div>div ul{
+.work-done .row-2 > div > div ul{
 	margin:0;
 	padding: 0;
 	list-style: none;
 }
-.work-done .row-2>div>div ul + ul{
+.work-done .row-2 > div > div ul + ul{
 	margin-top: 15px;
 }
-.work-done .row-2>div>div ul li{
+.work-done .row-2 > div > div ul li{
 	float: left;
 	width: 191px;
 	height: 131px;
 	background-image:url(../images/work-done/clients.jpg);
 	background-repeat: no-repeat;
 }
-.work-done .row-2>div>div ul li + li{
+.work-done .row-2 > div > div ul li + li{
 	margin-left: 14px;
 }
 .etisalat{
