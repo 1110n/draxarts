@@ -503,7 +503,7 @@ ul{
 }
 
 .what-we-do-index .slide-3 img {
-    position: static !important;
+    position: absolute !important;
 }
 
 .what-we-do-index .row-3 > div{
