@@ -22,8 +22,11 @@ function resizeImages () {
         var lowerRatio = Math.min(widthRatio, heightRatio);
         
         img.removeAttr('width').removeAttr('height');
-        img.attr('height', img.height() / lowerRatio);
-        img.attr('width', img.width() / lowerRatio);
+        var imgWidth = img.width();
+        var imgHeight = img.height();
+
+        img.attr('height', imgHeight / lowerRatio);
+        img.attr('width', imgWidth / lowerRatio);
         
         // Center
         img.css('top', (height - img.height()) / 2); // The top of the image should always be visible
