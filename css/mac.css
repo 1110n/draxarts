@@ -557,33 +557,60 @@ ul{
 	display: block;
 	height: 100%;
 	width: 100%;
+	text-align: center;
+	text-indent: -9999px;
 	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+.what-we-do-index .row-3 div > div ul li a:hover{
+	background-color: #820000 !important;
+}
+
 .what-we-do-index .row-3 div > div ul li + li{
 	margin-left: 42px;
 }
 #branding{
 	background-image: url(../images/what-we-do/what-we-do-branding.jpg);
 }
+#branding:hover{
+	background-image: url(../images/what-we-do/what-we-do-branding-hover.png);
+}
 #packaging{
 	background-image: url(../images/what-we-do/what-we-do-packaging.jpg);
+}
+#packaging:hover{
+	background-image: url(../images/what-we-do/what-we-do-packaging-hover.png);
 }
 #designing{
 	background-image: url(../images/what-we-do/what-we-do-designing.jpg);
 }
+#designing:hover{
+	background-image: url(../images/what-we-do/what-we-do-designing-hover.png);
+}
 #presenting{
 	background-image: url(../images/what-we-do/what-we-do-presenting.jpg);
+}
+#presenting:hover{
+	background-image: url(../images/what-we-do/what-we-do-presenting-hover.png);
 }
 #advertising{
 	background-image: url(../images/what-we-do/what-we-do-advertising.jpg);
 }
+#advertising:hover{
+	background-image: url(../images/what-we-do/what-we-do-advertising-hover.png);
+}
 #web-marketing{
 	background-image: url(../images/what-we-do/what-we-do-marketing.jpg);
 }
+#web-marketing:hover{
+	background-image: url(../images/what-we-do/what-we-do-marketing-hover.png);
+}
 #training{
 	background-image: url(../images/what-we-do/what-we-do-training.jpg);
+}
+#training:hover{
+	background-image: url(../images/what-we-do/what-we-do-training-hover.png);
 }
 #training-link{
 	height: 212px;
@@ -919,6 +946,18 @@ ul{
 .work-done .row-2 > div > div ul li + li{
 	margin-left: 14px;
 }
+.work-done .row-2 > div > div ul li:last-of-type {
+    width: 186px;
+}
+.work-done .row-2 > div > div ul li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.work-done .row-2 > div > div ul li a:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
 .etisalat{
 	background-position: -205px 0;
 }
@@ -1089,4 +1128,349 @@ ul{
 .drax-force .row-6 .drax-force-text-box{
 	top: 5%;
 	left: 60%;
+}
+
+/******* Contact Us **********/
+.contact-us-content-container{
+	width: 950px;
+	padding: 0 25px;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 20% auto 10%;
+}
+
+.contact-us-content-container
+.form-column{
+	width: 454px;
+	float: left;
+	padding: 45px 35px 30px 20px;
+	background-color: rgba(225, 227, 229, 0.7);
+}
+
+.contact-us-content-container
+.form-column h1{
+	color: #292929;
+	font-size: 30px;
+	text-align: center;
+    font-family: 'Gotham Rounded';
+	text-shadow: 0 1px #f8f9fa;
+	margin: 0 0 30px;
+	font-weight: normal;
+}
+
+.contact-us-content-container
+.form-column form{
+	width: 100%;
+    font-family: 'Gotham Rounded';
+}
+
+.contact-us-content-container
+.form-column form input,
+.contact-us-content-container
+.form-column form textarea{
+	resize: none;
+	background: #f3f3f3;
+	border: solid 1px #bbbebf;
+	width: 388px;
+}
+
+.form-column form > div {
+    clear: both;
+}
+
+.form-column form > div > div {
+    float: right;
+}
+
+.contact-us-content-container
+.form-column form label{
+	color: #000;
+	font-size: 14px;
+	float: left;
+}
+.contact-us-content-container
+.form-column form input{
+	margin-bottom: 23px;
+	height: 23px;
+}
+
+.contact-us-content-container
+.form-column form textarea{
+	height: 190px;
+}
+.contact-us-content-container
+.form-column form button{
+	height: 23px;
+	width: 101px;
+	color: #fff;
+	font-size: 16px;
+	background: #780000;
+	border: none;
+	padding:0;
+	margin: 15px 0 0 65px;
+	text-transform:uppercase;
+	clear:both;
+}
+
+.contact-us-content-container
+.address-column{
+	width: 360px;
+	margin-top: 83px;
+	float: right;
+    font-family: 'Gotham Rounded';
+}
+
+.contact-us-content-container
+.address-column h2{
+	margin: 0 0 56px;
+	color: #fff;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.contact-us-content-container
+.address-column > div{
+	margin-left: 42px;
+	padding-left: 47px;
+	border-left: dotted 1px #555;
+	color: #181818;
+	text-shadow: 1px 1px #dcdee0;
+}
+
+.contact-us-content-container
+.address-column > div h3{
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0 0 25px;
+}
+
+.contact-us-content-container
+.address-column > div p{
+	margin: 0 0 30px;
+}
+
+.contact-us-content-container
+.address-column > div em{
+	font-style: normal;
+	font-size: 24px;
+}
+
+.contact-us .breadcrumb p{
+	color: #393939;
+}
+
+/***** Work Done *********/
+
+/***** B & O *********/
+.work-done-inner .screen-text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #000;
+	font-size: 16px;
+}
+
+.work-done-inner .screen-text p{
+	margin: 0 0 35px;
+	line-height: 25px;
+}
+
+.work-done-inner .slide > section{
+	 position: relative;
+}
+
+.work-done-inner .slide .row-1 h1{
+	 font-size: 32px;
+	 color: #fff;
+	 position: absolute;
+	 top: 57%;
+	 width: 100%;
+	 text-align: center;
+    font-family: 'Gotham Rounded';
+	font-weight: 200;
+ }
+.b-and-o .row-2 .screen-text{
+	top: 54%;
+	left: 73%;
+}
+.b-and-o .row-3 .screen-text{
+	top: 10%;
+	left: 38%;
+}
+.b-and-o .row-4 .screen-text{
+	top: 10%;
+	left: 40%;
+	text-shadow: 1px 1px #b7b39e;
+}
+.b-and-o .row-5 .screen-text{
+	color: #fff;
+	top: 30%;
+	left: 60%;
+}
+.b-and-o .row-6 .screen-text{
+	top: 59%;
+	left: 74%;
+}
+.b-and-o .row-7 .screen-text{
+	top: 7%;
+	left: 70%;
+}
+
+/***** Etisalat *********/
+.work-done-inner .screen-text h2{
+	font-size: 32px;
+	margin: 0 0 32px;
+    font-family: 'Gotham Rounded';
+}
+.etisalat .screen-text h2{
+	color: #fff;
+}
+.work-done-inner .screen-text h3{
+	font-size: 20px;
+	color: #000;
+	margin: 0 0 32px;
+    font-family: 'Gotham';
+}
+.etisalat .row-2 .screen-text{
+	color: #fff;
+	top: 25%;
+	left: 35%;
+}
+.etisalat .row-3 .screen-text{
+	top: 23%;
+	left: 42%;
+}
+.etisalat .row-4 .screen-text{
+	top: 28%;
+	left: 72%;
+}
+.etisalat .row-5 .screen-text{
+	top: 25%;
+	left: 42%;
+	color: #fff;
+}
+.etisalat .row-5 .screen-text h3{
+	color: #fff;
+}
+
+.etisalat .row-6 .screen-text{
+	top: 80%;
+	left: 40%;
+	text-align: center;
+}
+.etisalat .row-7 .screen-text{
+	top: 73%;
+	left: 37%;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 10px;
+	text-align: center;
+}
+.etisalat .row-7 .screen-text p{
+	margin: 0;
+}
+.etisalat .row-8 .screen-text{
+	top: 85%;
+	left: 42%;
+	text-align: center;
+	line-height: 25px;
+}
+
+/************** NEXUS ***********/
+.nexus .screen-text{
+	line-height: 25px;
+}
+.nexus .row-1 .screen-text{
+	top: 0%;
+	left: 0%;
+}
+.nexus .row-2 .screen-text{
+	top: 29%;
+	left: 29%;
+}
+.nexus .row-3 .screen-text{
+	top: 10%;
+	left: 68%;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 20px 35px 20px 25px;
+}
+.nexus .row-4 .screen-text{
+	top: 20%;
+	left: 35%;
+}
+.nexus .row-5 .screen-text{
+	top: 19%;
+	left: 71%;
+}
+.nexus .row-6 .screen-text{
+	top: 16%;
+	left: 35%;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 20px 35px 20px 25px;
+}
+.nexus .row-7 .screen-text{
+	top: 5%;
+	left: 78%;
+}
+
+/**************** UNIVERSITY OF NIGERIA***************/
+.unn .row-1 .screen-text{
+	left: 0%;
+	top: 0%;
+}
+.unn .row-2 .screen-text{
+	left: 41%;
+	top: 18%;
+	color: #fff;
+}
+.unn .row-3 .screen-text{
+	left: 24%;
+	top: 24%;
+	padding: 20px 35px 20px 25px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+}
+.unn .row-4 .screen-text h3,
+.unn .row-5 .screen-text h3,
+.unn .row-3 .screen-text h3{
+	color: #fff;
+}
+.unn .row-4 .screen-text{
+	left: 70%;
+	top: 0%;
+	padding: 20px 35px 235px 25px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	background-image: url(../images/work-done/unn/compass-icon.png);
+	background-repeat: no-repeat;
+	background-position: center 87%; 
+}
+
+.unn .row-5 .screen-text{
+	left: 17%;
+	top: 37%;
+	padding: 20px 35px 20px 25px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+}
+.unn .row-6 .screen-text{
+	left: 41%;
+	top: 16%;
+}
+.unn .row-6 .screen-text h2{
+	margin-bottom: 90px;
+}
+.unn .row-8 .screen-text{
+	left: 57%;
+	top: 71%;
+	color: #fff;
+}
+.unn .row-9 .screen-text{
+	left: 30%;
+	top: 50%;
+}
+.unn .screen-text h3{
+	font-size: 24px;
 }

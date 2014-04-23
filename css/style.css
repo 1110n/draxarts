@@ -37,7 +37,11 @@ body {
 }
 
 #main-nav > ul > li + li:hover {
-    background-color: #bc8080;
+	background: #f5a110 url(../images/nav-bar-hover.png) no-repeat;
+}
+
+#main-nav > ul > li + li:hover a{
+	color: #780000;
 }
 
 #main-nav > ul li a {
