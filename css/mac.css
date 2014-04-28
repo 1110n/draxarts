@@ -771,10 +771,12 @@ ul{
 .row-2 .who-we-are-text-box{
 	top: 14%;
 	left: 16%;
+    background: rgba(255, 255, 255, 0.55);
 }
 .row-3 .who-we-are-text-box{
 	top: 16%;
 	left: 50%;
+    background: rgba(255, 255, 255, 0.55);
 }
 .row-4 .who-we-are-text-box{
 	top: 50%;
@@ -783,6 +785,7 @@ ul{
 .row-5 .who-we-are-text-box{
 	bottom: 5%;
 	left: 31%;
+    background: rgba(255, 255, 255, 0.45);
 }
 .row-6 .who-we-are-text-box{
 	bottom: 35%;
@@ -795,6 +798,7 @@ ul{
 .row-8 .who-we-are-text-box{
 	top: 28%;
 	left: 52%;
+    background: rgba(255, 255, 255, 0.3);
 }
 .who-we-are-wrapper .row-9 .transparent-text-box{
 	top: 13%;
@@ -845,16 +849,22 @@ ul{
 	color: #000;
 	bottom: 6%;
 	left: 35%;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.7);
 }
 .who-we-are-wrapper .row-14 > div{
 	width: 1173px;
-	margin: 0 auto;
+	margin: 0 auto 253px;
 	padding-top: 27px;
-	position: absolute;
-	top: 0;
-	left:0;
-	bottom:0;
-	right:0;
+    position: relative;
+}
+.who-we-are-wrapper .slide.row-14 {
+    height: auto !important;
+}
+.who-we-are-wrapper .slide.row-14 > section > img {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
 }
 .who-we-are-wrapper .row-14 > div > div{
 	width: 1003px;

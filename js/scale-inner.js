@@ -1,7 +1,7 @@
 jQuery(function ($) {
     resizeImages();
     
-    $('#home-slider img').load(resizeImages);
+    $('#home-slider img').on('load', resizeImages);
     $(window).resize(resizeImages);
     
     // We resize the images continuously for 20 seconds to fix an annoying Chrome bug
@@ -17,7 +17,7 @@ jQuery(function ($) {
 });
 
 function resizeImages () {
-    var imgs = $('#wrapper .slide img');
+    var imgs = $('#wrapper .slide > img, #wrapper .slide > section > img').not('.no-scale');
     var slides = $('#wrapper .slide');
     var win = $(window);
     var width = win.width();
@@ -54,5 +54,20 @@ function resizeImages () {
         var height = win.height();
         slide.css('height', height);
     });
+    
+    
+    
+    var count = imgs.length;
+    var preloader = $('#preloader');
+    
+    imgs.on('load', function () {
+        count--;
+        
+        if(count === 0) {
+            preloader.fadeOut();
+            setSlide(0);
+        }
+    });
+
 }
 
