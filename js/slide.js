@@ -50,4 +50,18 @@ jQuery (function () {
         resizeUl();
         setSlide(currentIndex % lis.length);
     });
+    
+    
+    var imgs = $('#home-slider img');
+    var count = imgs.length;
+    var preloader = $('#preloader');
+    
+    imgs.on('load', function () {
+        count--;
+        
+        if(count === 0) {
+            preloader.fadeOut();
+            setSlide(0);
+        }
+    });
 });
