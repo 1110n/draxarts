@@ -121,6 +121,7 @@ ul{
 /**** start of Footer *****/
 #footer{
 	background: #8f0100 url(../images/footer-bckgrd.jpg) repeat-x;
+	border-top: solid 2px #ceb7b7;
 }
 
 /*** Footer logo section *****/
