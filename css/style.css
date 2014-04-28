@@ -152,3 +152,11 @@ body {
 
 
 /** TEMP SITE **/
+
+
+#preloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff url('../images/preloader.gif') 50% 80% no-repeat;
+}

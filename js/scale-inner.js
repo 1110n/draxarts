@@ -3,6 +3,17 @@ jQuery(function ($) {
     
     $('#home-slider img').load(resizeImages);
     $(window).resize(resizeImages);
+    
+    // We resize the images continuously for 20 seconds to fix an annoying Chrome bug
+    var start = new Date();
+    
+    var interval = setInterval(function () {
+        resizeImages();
+        
+        if((new Date()) - start >= 20000) {
+            clearInterval(interval);
+        }
+    }, 1000);
 });
 
 function resizeImages () {
@@ -21,12 +32,11 @@ function resizeImages () {
         var heightRatio = img.height() / height;
         var lowerRatio = Math.min(widthRatio, heightRatio);
         
-        img.removeAttr('width').removeAttr('height');
         var imgWidth = img.width();
         var imgHeight = img.height();
-
-        img.attr('height', imgHeight / lowerRatio);
-        img.attr('width', imgWidth / lowerRatio);
+        
+        img.height('height', imgHeight / lowerRatio);
+        img.width('width', imgWidth / lowerRatio);
         
         imgWidth = img.width();
         imgHeight = img.height();

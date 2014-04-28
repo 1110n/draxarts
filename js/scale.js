@@ -3,6 +3,18 @@ jQuery(function ($) {
     
     $('#home-slider img').load(resizeImages);
     $(window).resize(resizeImages);
+    
+    var imgs = $('#home-slider img');
+    var count = imgs.length;
+    var preloader = $('#preloader');
+    
+    imgs.on('load', function () {
+        count--;
+        
+        if(count === 0) {
+            preloader.fadeOut();
+        }
+    });
 });
 
 function resizeImages () {
