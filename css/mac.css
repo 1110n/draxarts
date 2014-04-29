@@ -1264,6 +1264,7 @@ ul{
 	font-size: 20px;
 	color: #000;
 	margin: 0;
+	line-height: 28px;
 	font-family: 'Gotham';
 }
 .drax-force .row-2 .drax-force-text-box{
@@ -1284,7 +1285,7 @@ ul{
 }
 .drax-force .row-6 .drax-force-text-box{
 	top: 5%;
-	left: 60%;
+	left: 55%;
 }
 
 /******* Contact Us **********/
