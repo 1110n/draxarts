@@ -343,14 +343,6 @@ ul{
 .unposition #wrapper{
 	margin-top: -80px;
 }
-.submenu{
-	width: 1003px;
-	background: #fff;
-	position: absolute;
-	z-index: -1;
-	top: 59px;
-	padding-bottom: 1px;
-}
 .breadcrumb{
 	float: left;
 }
@@ -412,38 +404,56 @@ ul{
 	text-indent: -999999px;
 	background: #780000 url(../images/search-lens.png) no-repeat center center;
 }
+
+.submenu {
+	width: 1003px;
+	background: none;
+	position: absolute;
+	z-index: -1;
+	top: 60px;
+}
+
 .submenu > ul{
 	width: 100%;
 	height: 56px;
+	margin: 1px 0 0;
 	padding: 0;
-	margin: 0;
 	clear: both;
 	list-style: none;
-	border-top: solid 1px #f1ce30;
 }
 
 .submenu > div {
     padding-bottom: 11px;
+    background: #FFF;
 }
-.submenu > ul li{
+
+.submenu li {
 	float: left;
 	height: 100%;
 	width: 142px;
 	background-image: url(../images/submenu-links.png);
 	background-repeat: no-repeat;
+    background-color: #FFF;
 }
-.submenu > ul li + li{
-	border-left: solid 1px #f1ce30;
+
+.submenu li + li{
+	margin-left: 1px;
 }
-.submenu > ul li a{
+
+.submenu li:last-child a {
+    padding: 0 1px;
+}
+
+.submenu li a{
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
 	display: none;
 	text-indent: -999998px;
 }
+
 .active-submenu,
-.submenu > ul li:hover a{
+.submenu li:hover a{
 	text-indent: 0px !important;
 	display: block !important;
 	text-align: center;
@@ -638,17 +648,32 @@ ul{
 .white-text-box span{
 	display: block;
 }
+
 .branding .slide section{
 	position: relative;
 }
+
 .branding .row-1 .white-text-box{
-	bottom: 18%;
-	right: 40%;
+	bottom: 191px;
+	right: 61px;
 }
+
 .branding .row-2 .white-text-box{
 	top: 6%;
 	right: 25%;
 }
+
+.branding .slide.row-3 {
+    height: auto !important;
+}
+
+.branding .slide.row-3 img {
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
 .what-we-do-numbered-list{
 	width: 880px;
 	margin: 0 auto;
@@ -700,21 +725,48 @@ ul{
 	margin-top: 21px;
 }
 /****** Advertising Page ********/
+.advertising .row-1 .content {
+    margin-top: -803px;
+    height: 803px;
+}
 
 .advertising .row-1 .white-text-box{
-	top: 25%;
-	left: 37%;
+	top: 51px;
+	left: 41px;
 }
+
+.advertising .row-2 .content {
+    text-align: center;
+    height: 400px;
+    margin-top: -400px;
+    line-height: 400px;
+}
+
 .advertising .row-2 .white-text-box{
-	bottom: 19%;
-	left: 30%;
+    position: relative;
+    display: inline-block;
+    line-height: 1.3em;
+    bottom: 193px;
+    vertical-align: bottom;
 }
 
 /****** Designing Page ********/
 
-.designing .row-1 .white-text-box{
-	bottom: 7%;
-	left: 30%;
+.designing .row-1 .content {
+    text-align: center;
+    margin-top: -350px;
+    height: 350px;
+    vertical-align: bottom;
+    line-height: 350px;
+}
+
+.designing .row-1 .white-text-box {
+	display: inline-block;
+    text-align: left;
+    bottom: 20px;
+    position: relative;
+    line-height: 1.3em;
+    vertical-align: bottom;
 }
 
 /****** Packaging Page ********/
@@ -723,16 +775,62 @@ ul{
 	left: 30%;
 }
 
-/****** Presenting Page ********/
-.presenting .row-1 .white-text-box{
-	top: 25%;
-	left: 45%;
+.training #wrapper,
+.web-marketing #wrapper,
+.advertising #wrapper,
+.branding #wrapper,
+.presenting #wrapper,
+.designing #wrapper,
+.packaging #wrapper {
+    background: #fff no-repeat url('../images/what-we-do/top-bckgrd.jpg') top center;
+    background-size: 100% 197px;
+    padding-top: 198px;
+}
+
+.training #wrapper .slide,
+.web-marketing #wrapper .slide,
+.advertising #wrapper .slide,
+.branding #wrapper .slide,
+.presenting #wrapper .slide,
+.designing #wrapper .slide,
+.packaging #wrapper .slide {
+    height: auto !important;
+}
+
+.training #wrapper .slide img,
+.web-marketing #wrapper .slide img,
+.advertising #wrapper .slide img,
+.branding #wrapper .slide img,
+.presenting #wrapper .slide img,
+.designing #wrapper .slide img,
+.packaging #wrapper .slide img {
+    top: 0 !important;
+}
+
+.designing #wrapper .row-1 img {
+    max-width: 100%;
+    left: 0 !important;
 }
 
 /****** Presenting Page ********/
+.presenting .row-1 .white-text-box {
+	top: 51px;
+	left: 41px;
+}
+
+.presenting .row-1 .content {
+    top: -802px;
+}
+
+/****** Presenting Page ********/
+.training .row-1 .content {
+    height: 803px;
+    margin-top: -803px;
+}
+
 .training .row-1 .white-text-box{
-	top: 25%;
-	left: 39%;
+	top: 41px;
+	left: 53px;
 }
 
 /****** Presenting Page ********/
@@ -1059,55 +1157,93 @@ ul{
 	font-size: 28px;
 	margin:0 0 10px;
 }
+.row-1 .our-strategy-text-box p{
+    background: rgba(255, 255, 255, 0.55);
+    padding: 4px;
+}
+
+.row-4 .our-strategy-text-box,
+.row-3 .our-strategy-text-box,
+.row-2 .our-strategy-text-box {
+    background: rgba(255, 255, 255, 0.35);
+    padding: 8px;
+}
+
 .our-strategy-text-box p{
 	font-family: 'Gotham';
 	font-size: 20px;
 	margin: 0;
 }
+
 .our-strategy-text-box p span{
 	display: block;
 }
+
 .our-strategy .row-1 .our-strategy-text-box{
 	bottom: 11%;
 	left: 35%;
 }
+
 .our-strategy .row-2 .our-strategy-text-box{
 	bottom: 12%;
 	left: 31%;
 }
+
 .our-strategy .row-3 .our-strategy-text-box{
 	bottom: 16%;
 	left: 31%;
 }
+
 .our-strategy .row-4 .our-strategy-text-box{
 	bottom: 9%;
 	left: 31%;
 }
+
 .our-strategy .row-5 .our-strategy-text-box{
-	bottom: 33%;
-	left: 31%;
+	bottom: 22%;
+    width: 100%;
 }
+
+.our-strategy .row-5 .our-strategy-text-box p {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 4px;
+}
+
 .who-we-are-wrapper .breadcrumb p,
 .our-strategy .breadcrumb p,
 .drax-force .breadcrumb p{
 	color: #393939 !important;
 }
-.drax-force .breadcrumb em{
-	font-style: normal;
-	text-transform: lowercase !important;
+
+.drax-force #wrapper .slide {
+    height: auto !important;
 }
+
+.drax-force #wrapper .slide img {
+    top: 0 !important;
+}
+
+.drax-force .breadcrumb p {
+	text-transform: none !important;
+}
+
 .drax-force .row-1 p{
 	color: #fff;
 	font-size: 20px;
 	font-family: 'Gotham';
 	margin:0;
 	position: absolute;
-	bottom: 13%;
-	left: 31%;
+	bottom: 124px;
+    width: 100%;
+    text-align: center;
+    line-height: 28px;
 }
+
 .drax-force .drax-force-text-box{
 	position: absolute;
 }
+
 .drax-force .drax-force-text-box h3{
 	font-size: 36px;
 	color: #780000;
@@ -1115,12 +1251,14 @@ ul{
 	font-family: 'Gotham';
 	font-weight: 200;
 }
+
 .drax-force .drax-force-text-box b{
 	color: #000;
 	font-size: 24px;
 	font-family: 'Gotham';
 	font-weight: 200;
 }
+
 .drax-force .drax-force-text-box p{
 	font-size: 20px;
 	color: #000;

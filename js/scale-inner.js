@@ -65,7 +65,6 @@ function resizeImages () {
         
         if(count === 0) {
             preloader.fadeOut();
-            setSlide(0);
         }
     });
 

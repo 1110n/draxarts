@@ -168,3 +168,9 @@ body {
     left: 0;
     right: 0;
 }
+
+.content {
+    width: 1003px;
+    margin: 0 auto;
+    position: relative;
+}
