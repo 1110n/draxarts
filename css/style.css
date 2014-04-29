@@ -37,7 +37,7 @@ body {
 }
 
 #main-nav > ul > li + li:hover {
-	background: #f5a110 url(../images/nav-bar-hover.png) no-repeat;
+	background: #f5a110 url(../images/nav-bar.png) no-repeat;
 }
 
 #main-nav > ul > li + li:hover a{
