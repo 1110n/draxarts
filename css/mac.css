@@ -24,6 +24,30 @@ ul{
 	text-align: center;
 }
 
+#main-nav #nav-who-we-are:hover{
+	background-position: -150px 14px;
+}
+
+#main-nav #nav-what-we-do:hover{
+	background-position: -155px -65px
+}
+
+#main-nav #nav-our-strategy:hover{
+	background-position: -155px -144px;
+}
+
+#main-nav #nav-drax-force:hover{
+	background-position: -110px -223px;
+}
+
+#main-nav #nav-contact-us:hover{
+	background-position: -154px -382px;
+}
+
+#main-nav #nav-work-done:hover{
+	background-position: -150px -302px;
+}
+
 #slide-selector span{
 	height: 15px;
 	width: 15px;
@@ -1264,6 +1288,7 @@ ul{
 	font-size: 20px;
 	color: #000;
 	margin: 0;
+	line-height: 28px;
 	font-family: 'Gotham';
 }
 .drax-force .row-2 .drax-force-text-box{
@@ -1284,7 +1309,7 @@ ul{
 }
 .drax-force .row-6 .drax-force-text-box{
 	top: 5%;
-	left: 60%;
+	left: 55%;
 }
 
 /******* Contact Us **********/
