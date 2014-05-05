@@ -812,6 +812,7 @@ ul{
     padding-top: 198px;
 }
 
+.contact-us #wrapper .slide,
 .training #wrapper .slide,
 .web-marketing #wrapper .slide,
 .advertising #wrapper .slide,
@@ -822,6 +823,7 @@ ul{
     height: auto !important;
 }
 
+.contact-us #wrapper .slide img,
 .training #wrapper .slide img,
 .web-marketing #wrapper .slide img,
 .advertising #wrapper .slide img,
@@ -1338,7 +1340,6 @@ ul{
 	font-size: 30px;
 	text-align: center;
     font-family: 'Gotham Rounded';
-	text-shadow: 0 1px #f8f9fa;
 	margin: 0 0 30px;
 	font-weight: normal;
 }
@@ -1400,7 +1401,7 @@ ul{
 .contact-us-content-container
 .address-column{
 	width: 360px;
-	margin-top: 83px;
+	margin-top: 55px;
 	float: right;
     font-family: 'Gotham Rounded';
 }
@@ -1419,7 +1420,6 @@ ul{
 	padding-left: 47px;
 	border-left: dotted 1px #555;
 	color: #181818;
-	text-shadow: 1px 1px #dcdee0;
 }
 
 .contact-us-content-container
@@ -1427,6 +1427,16 @@ ul{
 	font-size: 24px;
 	font-weight: normal;
 	margin: 0 0 25px;
+}
+
+.contact-us-content-container .address-column a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-us-content-container .address-column a:hover {
+    text-decoration: underline;
+    color: #333;
 }
 
 .contact-us-content-container
