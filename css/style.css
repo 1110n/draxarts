@@ -180,9 +180,9 @@ body {
     display: block;
     right: 50px;
     bottom: 30px;
-    width: 30px;
-    height: 30px;
-    background: red;
+    width: 60px;
+    height: 60px;
+    background: url('../images/backtop.png') no-repeat center center;
     overflow: hidden;
     text-indent: -30000px;
 }
