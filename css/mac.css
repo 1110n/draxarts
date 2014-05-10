@@ -225,60 +225,105 @@ ul{
 	height: 138px;
 	width: 140px;
 	float: left;
-	background: #bc8080;
 }
 #footer-menu li + li{
 	margin-left: 1px;
 }
 #footer-menu li span{
-	height: 27px;
-	float: left;
-	padding-top: 3px;
+	height: 36px;
+	width: 100%;
+	line-height: 36px;
+	position: absolute;
+	bottom: 0;
 	background-image: url(../images/footer-menu-icons.png);
 	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.4);
 }
+
 #footer-menu li a{
 	width: 100%;
 	height: 100%;
 	color: #640000;
 	font-size: 15px;
 	text-decoration: none;
+	position: relative;
     font-family: "Helvetica Rounded Cond";
+	background-image: url(../images/footer-images.png);
+	background-repeat: no-repeat;
 }
+
 #footer-who-we-are{
 	width: 141px !important;
 }
-#footer-who-we-are span{
-	margin: 5px 0 0 23px;
-	text-indent: 22px;
-	background-position: -5px -5px;
+
+#footer-who-we-are a{
+	background-position: 1px 0;
 }
+
+#footer-who-we-are a:hover{
+	background-position: 1px bottom;
+}
+
+#footer-what-we-do a{
+	background-position: -141px 0;
+}
+
+#footer-what-we-do a:hover{
+	background-position: -141px bottom;
+}
+
+#footer-our-strategy a{
+	background-position: -283px 0;
+}
+
+#footer-our-strategy a:hover{
+	background-position: -283px bottom;
+}
+
+#footer-drax-force a{
+	background-position: -425px 0;
+}
+
+#footer-drax-force a:hover{
+	background-position: -425px bottom;
+}
+
+#footer-work-done a{
+	background-position: -566px 0;
+}
+
+#footer-work-done a:hover{
+	background-position: -566px bottom;
+}
+
 #footer-what-we-do span{
-	margin: 7px 0 0 16px;
-	text-indent: 27px;
-	background-position: -4px -44px;
+	text-indent: 42px;
+	background-position: 11px -37px;
 }
+
+#footer-who-we-are span{
+	text-indent: 45px;
+	background-position: 19px 1px;
+}
+
+#footer-our-strategy span{
+	text-indent: 40px;
+	background-position: 9px -76px;
+}
+
+#footer-drax-force span{
+	text-indent: 51px;
+	background-position: 18px -110px;
+}
+
+#footer-work-done span{
+	text-indent: 53px;
+	background-position: 20px -151px;
+}
+
 #footer-our-strategy{
 	width: 141px !important;
 }
-#footer-our-strategy span{
-	margin: 7px 0 0 12px;
-	text-indent: 28px;
-	background-position: -3px -82px;
-}
-#footer-drax-force span{
-	margin: 5px 0 0 21px;
-	text-indent: 30px;
-	height: 25px !important;
-	padding-top: 5px !important;
-	background-position: -2px -115px;
-}
-#footer-work-done span{
-	margin: 7px 0 0 24px;
-	text-indent: 29px;
-	background-position: -3px -157px;
-}
-
 /**** Contact details block *******/
 #footer-contact-us-block{
 	height: 55px;
@@ -335,6 +380,7 @@ ul{
 	background-image: url(../images/social-icons.png);
 	background-repeat: no-repeat;
 }
+
 .twitter-icon{
 	background-position: 0 -45px;
 }
@@ -347,6 +393,26 @@ ul{
 .blog-icon{
 	background-position: -3px -183px;
 	height: 37px !important;
+}
+
+.fb-icon:hover{
+	background-position: right 0;
+}
+
+.twitter-icon:hover{
+	background-position: right -45px;
+}
+
+.linked-in-icon:hover{
+	background-position: right -89px;
+}
+
+.youtube-icon:hover{
+	background-position: right -132px;
+}
+
+.blog-icon:hover{
+	background-position: right -184px;
 }
 
 /** Copyright section *****/
