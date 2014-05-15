@@ -116,6 +116,9 @@ body {
     overflow: hidden;
 }
 
+#wrapper .slide + .slide {
+    border-top: 2px solid #555;
+}
 
 
 
