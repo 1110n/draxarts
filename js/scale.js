@@ -42,11 +42,14 @@ function resizeImages () {
         
         img.removeAttr('width').removeAttr('height');
         
+    /**** FOR DRAX'S REQUEST: Set images to 100% *****/
+    /*
         if(widthRatio === lowerRatio) {
             img.attr('width', width);
         } else {
             img.attr('height', height);
         }
+        */
         
         // Center
         img.css('top', (height - img.height()) / 2); // The top of the image should always be visible

@@ -37,7 +37,7 @@ jQuery (function () {
     
     function setSlide (index) {
         var left = -index * lis.width();
-        var anim = {duration: 1200, easing: 'easeOutBack'};
+        var anim = {duration: 1200, easing: 'easeInOutQuad'};
         sliderUl.animate({left: left}, anim);
         selectors.removeClass('active-slide-selected');
         $(selectors[index]).addClass('active-slide-selected');
