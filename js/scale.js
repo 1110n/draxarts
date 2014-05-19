@@ -52,7 +52,12 @@ function resizeImages () {
         */
         
         // Center
-        img.css('top', (height - img.height()) / 2); // The top of the image should always be visible
+        if(img.closest('li').hasClass('slide-3')) {
+            img.css('top', Math.max((height - img.height()) / 2, -100)); // The top of the image should always be visible
+        } else {
+            img.css('top', (height - img.height()) / 2); // The top of the image should always be visible
+        }
+        
         img.css('left', (width - img.width()) / 2);
     });
 }

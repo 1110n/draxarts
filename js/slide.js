@@ -11,9 +11,10 @@ jQuery (function () {
     function resizeUl () {
         // Identify all slides
         selectorContainer.find('span').remove();
+        var width = $(window).width();
         
         lis.each(function (i) {
-            $(this).data('index', i);
+            $(this).data('index', i).width(width);
             selectorContainer.append($('<span>').data('index', i));
         });
 
@@ -37,7 +38,7 @@ jQuery (function () {
     
     function setSlide (index) {
         var left = -index * lis.width();
-        var anim = {duration: 1200, easing: 'easeInOutQuad'};
+        var anim = {duration: 1200, easing: 'easeInOutQuad', queue: false};
         sliderUl.animate({left: left}, anim);
         selectors.removeClass('active-slide-selected');
         $(selectors[index]).addClass('active-slide-selected');
