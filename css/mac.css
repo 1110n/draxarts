@@ -120,6 +120,12 @@ ul{
 	max-height: 50px;
 }
 
+.slide-3 .text-box{
+    left: 13%;
+    max-height: 50px;
+    top: 12%;
+}
+
 .slide-4 .text-box{
 	bottom: 9%;
 	left: 40%;
