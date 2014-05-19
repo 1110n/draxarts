@@ -18,10 +18,23 @@ jQuery(function ($) {
     var nav = $('#main-nav');
     var win = $(window);
     var toTop = $('#to-top');
+    var anim2 = {queue: false, duration: 200};
+        
+    $('#main-nav').on('mouseenter', function () {
+        $(this).find('.submenu').animate({'opacity': 1}, anim2);
+    }).on('mouseleave', function () {
+        win.scroll();
+    });
     
     win.scroll(function () {
         var top = win.scrollTop();
         nav.css('top', top);
+        
+        if(top > 10) {
+            $('#main-nav .submenu').animate({'opacity': 0.1}, anim2);
+        } else {
+            $('#main-nav .submenu').animate({'opacity': 1}, anim2);
+        }
         
         if(top > 100) {
             toTop.show();
@@ -41,11 +54,11 @@ function resizeImages () {
     var slides = $('#wrapper .slide');
     var win = $(window);
     var width = win.width();
-    var height = win.height();
     
     // For every image...
     imgs.each(function () {
         var img = $(this);
+        var height = img.closest('.slide').height();
         
         // What shall we resize?
         var widthRatio = img.width() / width;
@@ -60,6 +73,10 @@ function resizeImages () {
         
         imgWidth = img.width();
         imgHeight = img.height();
+        
+        if(img.closest('.slide').hasClass('row-2')) {
+            console.log(height, imgHeight, (height - imgHeight));
+        }
         
         // Center
         img.css('top', (height - imgHeight) / 2); // The top of the image should always be visible
