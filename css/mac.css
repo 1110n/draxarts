@@ -1146,22 +1146,31 @@ span {
 	top: 5px;
 	display: inline;
 }
-.carousel{
+
+#meet-the-team-carousel {
+    width: 1000px;
+    overflow: hidden;
+    height: 519px;
 	margin: 120px 0 0;
+}
+
+#meet-the-team-carousel > ul {
 	padding: 0;
 	list-style: none;
+    position: relative;
 }
-.carousel li{
+
+#meet-the-team-carousel > ul > li{
 	float: left;
 	width: 327px;
 	height: 519px;
 	background: #fff;
 }
-.carousel li + li{
+#meet-the-team-carousel > ul > li + li{
 	margin-left: 9px;
 }
 
-.carousel h3{
+#meet-the-team-carousel ul h3{
 	font-size: 20px;
 	color: #292929;
     font-family: 'Gotham Rounded';
@@ -1170,13 +1179,13 @@ span {
 	margin: 19px 0 0 15px;
 }
 
-.carousel h3 em{
+#meet-the-team-carousel ul h3 em{
 	font-weight: normal;
 	font-style: normal;
 	font-size: 18px;
 }
 
-.carousel p{
+#meet-the-team-carousel ul p{
 	margin: 25px 15px 0 15px;
 	color: #292929;
 	font-size: 15px;
@@ -1190,7 +1199,6 @@ span {
 	height: 90px;
 	width: 45px;
 	margin-top: 392px;
-	visibility: hidden;
 	background-image: url(../images/caroul-arrows.png);
 	background-repeat: no-repeat;
 }
@@ -1206,6 +1214,31 @@ span {
 /************* Portfolio/Work done page ****************/
 
 /*********** Work done **********/
+.work-done .screen-text {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.work-done .screen-text > div {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+    z-index: 0;
+}
+
+.work-done .screen-text > div > div {
+    right: 90px;
+    top: 43%;
+    position: absolute;
+	color: #000;
+	font-size: 20px;
+	font-family: 'Gotham';
+}
+
 .work-done .row-2 {
     height: auto !important;
 }
@@ -1217,14 +1250,6 @@ span {
     top: 0 !important;
 }
 
-.work-done .row-1 p{
-	top: 42%;
-	left: 66%;
-	color: #000;
-	font-size: 20px;
-	position: absolute;
-	font-family: 'Gotham';
-}
 .work-done .row-2 > div{
 	width: 1000px;
 	margin: 0 auto;
@@ -1257,6 +1282,13 @@ span {
 	height: 131px;
 	background-image:url(../images/work-done/clients.jpg);
 	background-repeat: no-repeat;
+    transition: opacity 0.5s;
+}
+.work-done .row-2 div div li img{
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    position: static !important;
 }
 .work-done .row-2 div div li + li{
 	margin-left: 14px;
@@ -1270,8 +1302,9 @@ span {
 	width: 100%;
 }
 
-.work-done .row-2 div div li a:hover{
-	background-color: rgba(0, 0, 0, 0.5);
+.work-done .row-2 div div li:hover{
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+    opacity: 0.7;
 }
 
 .etisalat{
@@ -1290,8 +1323,8 @@ span {
 .pharmcare{
 	background-position: -205px -144px;
 }
-.transcorp{
-	background-position: -410px -144px;
+.bgl{
+	background: #fff;
 }
 .dangote-pasta{
 	background-position: -615px -144px;

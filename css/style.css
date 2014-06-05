@@ -2,6 +2,16 @@ body {
     
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 #wrapper {
     top: 0;
     bottom: 0;
@@ -162,6 +172,7 @@ body {
     width: 100%;
     height: 100%;
     background: #fff url('../images/preloader.gif') 50% 80% no-repeat;
+    z-index: 300;
 }
 
 #preloader.fixed {
@@ -189,3 +200,119 @@ body {
     overflow: hidden;
     text-indent: -30000px;
 }
+
+#page-404 {
+    
+}
+
+#page-404 #footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-top: 1px solid #fff;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    font-size: 12px;
+    bottom: -41px;
+}
+
+#page-404 #preloader {
+    background-position: 50% 65%;
+}
+
+#page-404 .slide img {
+    position: absolute;
+}
+
+#page-404 .navigation-links {
+    position: absolute;
+    z-index: 2;
+    bottom: 58px;
+    width: 100%;
+}
+
+#page-404 .navigation-links h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+    line-height: 80px;
+    font-weight: normal;
+    margin: 0;
+}
+
+#page-404 .slide .links {
+    font-size: 0;
+    margin: 0 auto;
+    width: 834px;
+}
+
+#page-404 .slide .links a {
+    font-size: 24px;
+    display: inline-block;
+    width: 251px;
+    height: 252px;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+#page-404 .slide .links a:after {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    content: ' ';
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+#page-404 .slide .links a span {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.64);
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+}
+
+#page-404 .slide .links .what-we-do-link {
+    margin: 0 37px;
+}
+
+#page-404 .slide .links .what-we-do-link:after {
+    background: url(../images/error/error-page-whatwedo-img.jpg) no-repeat;
+}
+
+#page-404 .slide .links .who-we-are-link:after {
+    background: url(../images/error/error-page-whoweare-img.jpg) no-repeat;
+}
+
+#page-404 .slide .links .work-done-link:after {
+    background: url(../images/error/error-page-workdone-img.jpg) no-repeat;
+}
+
+#page-404 .slide .text-box {
+    position: absolute;
+    top: 107px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 36px;
+    height: 100%;
+}
+
+#page-404 .slide .text-box p {
+    margin: 0;
+}
+
+#page-404 #wrapper {
+    font-family: "Gotham Rounded", sans-serif;
+}
+
+
+
