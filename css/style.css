@@ -265,6 +265,11 @@ body {
     top: 0;
     left: 0;
     opacity: 0.6;
+    transition: opacity 0.5s;
+}
+
+#page-404 .slide .links a:hover:after {
+    opacity: 1;
 }
 
 #page-404 .slide .links a span {

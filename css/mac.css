@@ -452,6 +452,9 @@ ul{
 	background-position: -3px -183px;
 	height: 37px !important;
 }
+.pinterest-icon{
+	background-position: -3px -226px;
+}
 
 .fb-icon:hover{
 	background-position: right 0;
@@ -472,6 +475,10 @@ ul{
 .blog-icon:hover{
 	background-position: right -184px;
 }
+.pinterest-icon:hover {
+	background-position: right -226px;
+}
+
 
 /** Copyright section *****/
 .copyright{
